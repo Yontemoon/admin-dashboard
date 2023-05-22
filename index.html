@@ -9,43 +9,127 @@
 </head>
 <body>
 <script src="javascript.js" defer></script>
-    <div id="header"></div>
+    <div id="header">
         <div id="upper">
-            <div id="searchIcon"></div>
-            <div id="searchBar"></div>
-            <div id="alertIcon"></div>
-            <div id="profilePic"></div>
-            <div id="name"></div>
+            <form id="search">
+                <button type="submit" id="submitButton"></button>
+                <input type="search" name="search" id="searchBar"/>
+            </form>
+
+            <button id="alertIcon"></button>
+            <div id="profilePic">PROFILE PIC</div>
+            <div id="profileName">MONTE YOON</div>
         </div>
         <div id="lower">
-            <div id="intro"></div>
+            <div id="intro">Temporary Hello, Monte Yoon</div>
             <div id="options">
-                <button id="new">New</button>
-                <button id="upload">Upload</button>
-                <button id="share">Share</button>
+                <button id="new" class="lowerButton">New</button>
+                <button id="upload" class="lowerButton">Upload</button>
+                <button id="share" class="lowerButton">Share</button>
             </div>
         </div>
+    </div>
     <div id="sidebar">
-        <div id="dashboardIcon"></div>
-        <div id="home"></div>
-        <div id="profile"></div>
-        <div id="messages"></div>
-        <div id="history"></div>
-        <div id="tasks"></div>
-        <div id="communities"></div>
-        <div id="settings"></div>
-        <div id="support"></div>
-        <div id="privacy"></div>
+        <div id="sidebar1">
+            <div id="dashboardIcon">
+                <img src="/home/monte/repos/admin-dashboard/view-dashboard-variant.svg" id="homeIcon" alt="dashboard">
+                <div>Dashboard</div>
+            </div>
+        </div>
+        <div id="sidebar2">   
+            <div id="home" class="inlineContainer">
+                <img src="/home/monte/repos/admin-dashboard/home.svg" class="icons" alt="Home">
+                <div>Home</div>
+            </div>
+            <div id="profile" class="inlineContainer">
+                <img src="/home/monte/repos/admin-dashboard/account.svg" class="icons" alt="Profile">
+                <div>Profile</div>
+            </div>
+            <div id="messages" class="inlineContainer">
+                <img src="/home/monte/repos/admin-dashboard/message-reply.svg" class="icons" alt="Message">
+                <div>Messages</div>
+            </div>
+            <div id="history" class="inlineContainer">
+                <img src="/home/monte/repos/admin-dashboard/history.svg" class="icons" alt="History">
+                <div>History</div>
+            </div>
+            <div id="tasks" class="inlineContainer">
+                <img src="/home/monte/repos/admin-dashboard/calendar-check.svg" class="icons" alt="tasks">
+                <div>Tasks</div>
+            </div>
+            <div id="communities" class="inlineContainer">
+                <img src="/home/monte/repos/admin-dashboard/account-group.svg" class="icons" alt="community">
+                <div>Communities</div>
+            </div>
+        </div>
+        <div id="sidebar3">
+            <div id="settings" class="inlineContainer">
+                <img src="/home/monte/repos/admin-dashboard/cog-outline.svg" class="icons" alt="Settings">
+                <div>Settings</div>
+            </div>
+            <div id="support" class="inlineContainer">
+                <img src="/home/monte/repos/admin-dashboard/help-box.svg" class="icons" alt="Support">
+                <div>Support</div>
+            </div>
+            <div id="privacy" class="inlineContainer">
+                <img src="/home/monte/repos/admin-dashboard/incognito.svg" class="icons" alt="Privacy">
+                <div>Privacy</div>
+            </div>
+        </div>
     </div>
     <div id="mainContent">
-        <div id="yourProjects">
-            <div class="project">Project1</div>
-            <div class="project">Project2</div>
-            <div class="project">Project3</div>
-            <div class="project">Project4</div>
-            <div class="project">Project5</div>
-            <div class="project">Project6</div>
-        </div> 
+        <div id="mainLeft">
+            <div id="projectHeader" class="projectHeader">Your Projects</div>
+            <div id="showProjects">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Once upon a time, in the mystical land of Zorblatopia, there lived a peculiar creature named Quibberquack. Quibberquack was unlike any other creature in Zorblatopia, for it possessed the unique ability to speak in the whimsical language of gibberish.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>In this fantastical realm, gibberish held a special place, as it was said to contain hidden wisdom and extraordinary powers. Quibberquack, with its extraordinary gift, became a revered figure among the inhabitants of Zorblatopia. People from far and wide would gather around Quibberquack, eagerly waiting to hear its nonsensical yet captivating tales.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>One sunny morning, as the breeze carried the scent of marshmallow clouds and the laughter of fluttering pixies, Quibberquack stood atop a moss-covered rock, ready to enthrall the crowd with an epic tale of gibberish.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 4</h3>
+                    <p>"Zibberzabber, fizzlefroth, twiddledee, twaddledee!" exclaimed Quibberquack, capturing the attention of everyone present. With animated gestures and a mischievous twinkle in its eyes, Quibberquack began the tale.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 5</h3>
+                    <p>Once upon a snickerdoodle, in a land far beyond the snugglewumps, there lived a zigglypuff. This zigglypuff, known as Wobblewack, had a peculiar habit of collecting squigglytwigs and jibberjabbers. Every morning, Wobblewack would prance through the fields, scooping up twiddlytwigs and singing nonsensical tunes."</p>
+                </div>
+                <div class="project">
+                    <h3>Project 6</h3>
+                    <p>"As Wobblewack's collection grew, so did its enthusiasm. One fine day, while skipping beside a bubbling doodledoo, it stumbled upon a glimmering sproingledoor. This sproingledoor, hidden amidst the daisies, beckoned Wobblewack with a mysterious charm."</p>
+                </div>
+            </div>
+        </div>
+        <div id="mainRight">
+            <div id="announcementsHeader" class="projectHeader">Announcements</div>
+            <div id="showAnnouncements">
+                <div class="announcement">
+                    <h4>Site Maintenance</h4>
+                    <p>"Intrigued by the sproingledoor, Wobblewack bravely twisted the knob with a snickerfizzle and tumbled into a world of bewildering marvels. The land beyond the sproingledoor was a kaleidoscope of wigglywhirls and flibberflutters. Wobblewack was in awe of the enchanted gibberish that surrounded it."</p>
+                </div>
+                <div class="announcement">
+                    <h4>Community Share Day</h4>
+                    <p>"Through the land of wobbling wobbledees and giggling gobbledygooks, Wobblewack ventured, encountering whimsical creatures and fantastical spectacles at every turn. There were snortlebops that bounced on puffy trampolines, squigglequacks that sang melodies of utter silliness, and even dinglefluffs that tickled with their furry tendrils."</p>
+                </div>
+                <div class="announcement">
+                    <h4>Updated Privacy Policy</h4>
+                    <p>"With newfound wisdom, Wobblewack bid farewell to the enchanting land beyond the sproingledoor and returned to Zorblatopia. Inspired by its adventures, Wobblewack shared the tales of gibberish with its fellow Zorblatopians, spreading laughter, imagination, and a sense of whimsy throughout the land."</p>
+                </div>
+            </div>
+            <div id="trendingHeader" class="projectHeader">Trending</div>
+            <div id="showTrending">
+                <div class="trending">USER1</div>
+                <div class="trending">USER2</div>
+                <div class="trending">USER3</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
